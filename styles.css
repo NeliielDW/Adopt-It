@@ -130,3 +130,91 @@ header nav a:hover {
     height: 4rem;
     width: 10rem;
 }
+
+/* PETS CARD SECTION */
+#pets-index {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#pets-index .card-container {
+    border: .2rem solid var(--color-primary);
+    border-radius: 2.2rem;
+    height: 30rem;
+    width: 18.4rem;
+    margin: 1rem;
+}
+
+#pets-index .card-container .img-card {
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+
+#pets-index .card-container .img-card img {
+    height: 16rem;
+    width: 18rem;
+    border-radius: 2rem 2rem 0rem 0rem;
+    position: absolute;
+    z-index: -1;
+}
+
+#pets-index .card-container .text-card {
+    z-index: 1000;
+    border-radius: 2rem;
+    margin-top: 14rem;
+    padding: .6rem;
+    background-color: #ffffff;
+}
+
+#pets-index .card-container .text-card .text-card-left h3{
+    font-family: var(--title-text);
+    color: var(--color-secondary);
+    font-size: 1.8rem;
+}
+
+#pets-index .card-container .text-card .text-card-right {
+    text-align: right;
+}
+
+#pets-index .card-container .text-card .text-card-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#pets-index .card-container .text-card .text-card-center .card-index-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pets-index .card-container .text-card .text-card-center .card-index-description .card-index-box {
+    border: .1rem solid var(--color-primary);
+    margin-top: .2rem;
+    padding: .2rem .8rem;
+    font-size: .8rem;
+}
+
+#pets-index .card-container .button-card {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pets-index .card-container .card-button {
+    padding: .5rem;
+    border-radius: 2rem;
+    background-color: var(--color-primary);
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all ease .5s;
+}
+
+#pets-index .card-container .card-button:hover {
+    transform: scale(1.2);
+}
